@@ -1,4 +1,4 @@
-#include <Wire.h>
+    #include <Wire.h>
 
 #define Addr 0x50 //  I2C address
 int data;
@@ -24,6 +24,7 @@ void loop()
   delay(1000);
   do{
     Serial.print("---------"); 
+    REG_read(0x08);
     delay(1000);
   }  while((data&2)==0);  // 檢測ADCR1中EOC位  
 
