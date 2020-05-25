@@ -16,7 +16,7 @@ void setup()
   REG_write(0x02, 0x00); // DCSET=+0V
  
   REG_write(0x03, 0x00); // 選擇通道 CH1為反相輸入端 CH0為正相輸入端
-  REG_write(0x07, 0x06); // VREFS=1 調整為外部參考電壓比較
+  REG_write(0x07, 0x05); // VREFS=1 調整為外部參考電壓比較
   REG_write(0x09, 0x1f);
   REG_write(0x08, 0x00);
   
